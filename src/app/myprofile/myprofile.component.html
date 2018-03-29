@@ -1,3 +1,22 @@
-<p>
-  myprofile works!
-</p>
+<div>
+   myprofile works!
+  <!-- bottom -> up name -->
+  <div class="row example">
+    <label>Example1: Name:</label>
+    <p>{{ name }}</p>
+  </div>
+
+  <!-- two way binding -->
+  <div class="row example">
+    <label>Example 2:</label>
+    <input type="text" [(ngModel)]="name2" [disabled]="isDisabled">
+    <p [class]="mystyle">name2 in angular is {{name2}}</p>
+ </div>
+
+ <!-- top -> down binding -->
+ <div class="row example"> 
+    <label>Example 3;</label>
+    <input type="text" (input)="updateText($event)">
+    <p>{{ myExample3Name }}</p>
+ </div>
+</div>
