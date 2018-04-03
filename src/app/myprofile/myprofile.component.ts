@@ -7,16 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyprofileComponent implements OnInit {
   name : String = "zhouzhou";
-  name2 : String ="***********";
-  mystyle : String = "demo-profile-name-blue";
+  name2 : String ="";
+  password: String ="";
+  repassword: String ="";
+  mystyle : String = "demo-profile-name-black";
   isDisabled : Boolean  = false;
   
   myExample3Name = "not set yet";
   
   constructor() { 
     setTimeout(() => {
-      this.mystyle = "demo-profile-name-red";
-    }, 3000);
+      this.mystyle = "demo-profile-name-black";
+    });
   
   }
   

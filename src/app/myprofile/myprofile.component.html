@@ -1,22 +1,67 @@
-<div>
-   myprofile works!
-  <!-- bottom -> up name -->
+<!--<div>
+  myprofile works!
+  <!-- bottom -> up name 
   <div class="row example">
     <label>Example1: Name:</label>
     <p>{{ name }}</p>
   </div>
 
-  <!-- two way binding -->
+ <!-- two way binding 
   <div class="row example">
     <label>Example 2:</label>
     <input type="text" [(ngModel)]="name2" [disabled]="isDisabled">
     <p [class]="mystyle">name2 in angular is {{name2}}</p>
- </div>
+  </div>
 
- <!-- top -> down binding -->
- <div class="row example"> 
+  <!-- top -> down binding 
+  <div class="row example">
     <label>Example 3;</label>
     <input type="text" (input)="updateText($event)">
     <p>{{ myExample3Name }}</p>
- </div>
-</div>
+  </div>
+</div>-->
+
+
+<form class="form-horizontal">
+  <fieldset>
+
+    <!-- Form Name -->
+    <legend>Creat My Profile</legend>
+   
+
+    <!-- Text input-->
+    <div class="form-group">
+      <div class="col-md-6">
+        <input type="text" [(ngModel)]="name2" [disabled]="isDisabled" id="User Name" name="User Name" type="text" placeholder="User Name" class="form-control input-md" required="">
+        <p [class]="mystyle">User name is {{name2}}</p>
+      </div>
+    </div>
+
+    <!-- Password input-->
+    <div class="form-group">
+      <div class="col-md-6">
+        <input type="text" [(ngModel)]="password" [disabled]="isDisabled" id="Password" name="Password" type="password" placeholder="Password" class="form-control input-md" required="">
+        <p [class]="mystyle">Password is {{password}}</p>
+      </div>
+    </div>
+
+    <!-- Password input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="Password Again">Re enter Password</label>
+      <div class="col-md-6">
+        <input type="text" [(ngModel)]="repassword" [disabled]="isDisabled" id="Password Again" name="Password Again" type="password" placeholder="Re enter Password" class="form-control input-md"
+          required="">
+          <p [class]="mystyle">Re-ener password is {{repassword}}</p>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for=""></label>
+      <div class="col-md-4">
+        <button id="" name="" class="btn btn-success">Submit</button>
+      </div>
+    </div>
+
+  </fieldset>
+</form>

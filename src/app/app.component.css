@@ -1,0 +1,19 @@
+.image-aboutus-banner {
+    background: linear-gradient(rgba(245, 245, 245, 0.7), rgba(245, 245, 245, 0.7)), url("https://media-cdn.tripadvisor.com/media/photo-s/01/7d/61/25/view-of-the-beach.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color:black;
+    padding-top: 110px;
+    padding-bottom:110px;
+ }
+ 
+.lg-text {
+    font-size:52px;
+    font-weight: 600;
+    text-transform: none;
+    color:black;
+}
+.image-aboutus-sm-banner p {
+    color:#fff;
+}
