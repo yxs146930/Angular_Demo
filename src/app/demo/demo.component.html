@@ -1,0 +1,35 @@
+<div>
+  demo works!
+
+  <div class="example-1">
+      <p *ngIf="isValid">this is example 1</p>
+      <p *ngIf="false">this is example 2</p>
+  </div>
+
+  <div class="example-2" *ngFor="let num of numbers">
+      <h1 *ngIf="num % 2 == 0">
+          {{ num }}   
+      </h1>  
+  </div>
+
+  <div class="example-3" *ngFor="let u of universities">
+      <label class="row">University Name: {{ u.name }}</label>
+      <label class="row">University ZipCode: {{ u.zipCode }}</label>
+  </div>
+
+  <div class="example-4">
+    <!-- next time self define directive -->
+      <p *ngSwitchCase="5">Value is 5</p>
+  </div>
+
+
+  <div class="example-4">
+      <p *ngIf="login; then loginT else logoutT">
+
+      </p>
+
+
+       <ng-template #loginT> ZhouZhou </ng-template>
+       <ng-template #logoutT>Please sign in</ng-template>
+    </div>
+</div>

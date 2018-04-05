@@ -1,0 +1,33 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-demo',
+  templateUrl: './demo.component.html',
+  styleUrls: ['./demo.component.css']
+})
+export class DemoComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+  a = "3";
+
+  university1 = {
+    name: "NYU",
+    zipCode: 11101
+  }
+
+  university2 = {
+    name: "SMU",
+    zipCode: 74254
+  }
+
+  universities = [this.university1, this.university2];
+  
+  login = false;
+  numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  isValid(): boolean {
+    return 1 + 1 == 2;
+  }
+}
