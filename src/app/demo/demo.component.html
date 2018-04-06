@@ -19,13 +19,14 @@
 
     <div class="example-4">
         <!-- next time self define directive -->
-        <p *ngSwitchCase="5">Value is 5</p>
+        <!-- <p *ngSwitchCase="5">Value is 5</p> -->
     </div>
 
     <div class="example-5">
         KEEP IT OR NOT:
-        <input type="checkbox" ng-model="myVar" ng-init="myVar = true">
-        <div ng-if="myVar">
+        <input type="checkbox" [(ngModel)]="myVar">
+        {{myVar}}
+        <div *ngIf="myVar">
             <h1>Welcome</h1>
             <p>Welcome to my home.</p>
             <hr>
