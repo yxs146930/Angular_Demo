@@ -15,12 +15,14 @@ export class DemoComponent implements OnInit {
 
   university1 = {
     name: "NYU",
-    zipCode: 11101
+    zipCode: 11101,
+    state:"NewYork"
   }
 
   university2 = {
     name: "SMU",
-    zipCode: 74254
+    zipCode: 74254,
+    state:"CA"
   }
 
   universities = [this.university1, this.university2];
@@ -30,4 +32,6 @@ export class DemoComponent implements OnInit {
   isValid(): boolean {
     return 1 + 1 == 2;
   }
+  inValid = true;
+
 }
