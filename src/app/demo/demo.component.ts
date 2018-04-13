@@ -39,5 +39,5 @@ export class DemoComponent implements OnInit {
   }
 
   inValid = true;
-
+  myVar = true;
 }

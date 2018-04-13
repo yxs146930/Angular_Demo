@@ -7,13 +7,15 @@ import { AboutComponent } from './about/about.component';
 import { UniversityComponent } from './university/university.component';
 import { MyprofileComponent } from './myprofile/myprofile.component';
 import { DemoComponent } from './demo/demo.component';
+import { ServicedemoComponent } from './servicedemo/servicedemo.component';
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
     UniversityComponent,
     MyprofileComponent,
-    DemoComponent
+    DemoComponent,
+    ServicedemoComponent
   ],
   imports: [
     BrowserModule,
