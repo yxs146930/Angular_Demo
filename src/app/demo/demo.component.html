@@ -1,4 +1,4 @@
-<div>
+<!--<div>
     demo works!
 
     <div class="example-1">
@@ -18,14 +18,14 @@
     </div>
 
     <div class="example-4">
-        <!-- next time self define directive -->
+        <!-- next time self define directive 
         <p *ngSwitchCase="5">Value is 5</p>
     </div>
 
     <div class="example-5">
         KEEP IT OR NOT:
-        <input type="checkbox" ng-model="myVar" ng-init="myVar = true">
-        <div ng-if="myVar">
+        <input type="checkbox" [(ngModel)]="myVar" *ngInit="myVar = true">
+        <div *ngIf="myVar">
             <h1>Welcome</h1>
             <p>Welcome to my home.</p>
             <hr>
@@ -47,18 +47,22 @@
     </div>
 
 
+    <div class="example-9" *ngFor="let hero of heroes">
+        {{ hero }}
+    </div>
+
+    <div  class="example-10" [ngSwitch]="'viewMode'">
+      <template [ngSwitchCase]="'map'" ngSwitchDefault> 
+      University map 
+      </template>      
+      <template [ngSwitchCase]="'list'"> 
+      student list
+      </template>
+    </div>
 
 
-
-
-
-    <div class="example-4">
-        <p *ngIf="login; then loginT else logoutT">
-
-        </p>
-
-
+    
         <ng-template #loginT> ZhouZhou </ng-template>
         <ng-template #logoutT>Please sign in</ng-template>
     </div>
-</div>
+</div>>-->

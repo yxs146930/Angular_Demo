@@ -1,23 +1,32 @@
+<div id="main" >
+    <!-- The navigation menu will get the value of the "active" variable as a class.
+         The $event.preventDefault() stops the page from jumping when a link is clicked. -->
 
-<div class="image-aboutus-banner"style="margin-top:70px">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-12">
-           <h1 class="lg-text">Welcome to our page</h1>
-           <p>Know more, learn more and develop more</p>
-         </div>
-      </div>
-  </div>
-  </div>
+    <nav class="{{active}}" (click)="$event.preventDefault()">
 
-<!-- component of univerisity -->
-<div>
-    <!-- <app-university></app-university> -->
+        <!-- When a link in the menu is clicked, we set the active variable -->
+
+        <a href="#" class="home" (click)="active='home'">Home</a>
+        <a href="#" class="projects" (click)="active='projects'">Projects</a>
+        <a href="#" class="services" (click)="active='services'">Services</a>
+        <a href="#" class="contact" (click)="active='contact'">Contact</a>
+    </nav>
+
+    <!-- ng-show will show an element if the value in the quotes is truthful,
+         while ng-hide does the opposite. Because the active variable is not set
+         initially, this will cause the first paragraph to be visible. -->
+
+    <p [hidden]="active">Please click a menu item</p>
+    <p *ngIf="active">You chose
+        <b>{{active}}</b>
+    </p>
+
 </div>
 
-<!-- component of demo -->
 <div>
-   <app-demo></app-demo> 
+    <app-university></app-university>
 </div>
 
-
+<div>
+    <app-university></app-university>
+</div>

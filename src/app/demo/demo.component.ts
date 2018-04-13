@@ -26,12 +26,18 @@ export class DemoComponent implements OnInit {
   }
 
   universities = [this.university1, this.university2];
+
+  Hero = {
+    id: '00011',
+   name: "Zhou"
+  }
   
   login = false;
   numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   isValid(): boolean {
     return 1 + 1 == 2;
   }
+
   inValid = true;
 
 }
