@@ -10,26 +10,26 @@ export class RecipeService {
 
   private recipes: Recipe[] = [
     new Recipe(
-      'Tasty Schnitzel',
-      'A super-tasty Schnitzel - just awesome!',
-      'https://upload.wikimedia.org/wikipedia/commons/7/72/Schnitzel.JPG',
+      'Chanel',
+      'Six collections are presented by Karl Lagerfeld each year',
+      'https://upload.wikimedia.org/wikipedia/en/thumb/9/92/Chanel_logo_interlocking_cs.svg/1200px-Chanel_logo_interlocking_cs.svg.png',
       [
-        new Ingredient('Meat', 1),
-        new Ingredient('French Fries', 20)
+        new Ingredient('New York', 10),
+        new Ingredient('Alenta', 5)
       ]),
-    new Recipe('Big Fat Burger',
-      'What else you need to say?',
-      'https://upload.wikimedia.org/wikipedia/commons/b/be/Burger_King_Angus_Bacon_%26_Cheese_Steak_Burger.jpg',
+    new Recipe('Dior',
+      'Not only leather, but also fragrance',
+      'https://forfashionfreaks.files.wordpress.com/2014/08/christian-dior-company-logo.jpg',
       [
-        new Ingredient('Buns', 2),
-        new Ingredient('Meat', 1)
+        new Ingredient('Boston', 5),
+        new Ingredient('San Francisco', 5)
       ]),
-      new Recipe('Vege',
-      'It is my favourite food',
-      'http://krisaru.com/wp-content/uploads/2011/06/vege.jpg',
+      new Recipe('Louis Vuitton',
+      'Travel is the eternal source of inspiration within the Louis Vuitton universe',
+      'http://www.sgcustomerservicenumbers.com/wp-content/uploads/2016/12/Louis-Vuitton-Logo.jpg',
       [
-        new Ingredient('Carrot', 2),
-        new Ingredient('Cucumber', 3)
+        new Ingredient('New York', 7),
+        new Ingredient('Los Angles', 6)
       ]),
       
   ];
@@ -42,7 +42,7 @@ export class RecipeService {
 
   getRecipe(index: number) {
     if (index > this.recipes.length - 1) {
-      console.log("not enough food to provide");
+      console.log("not enough brand to provide");
       return null;
     }
     return this.recipes[index];
