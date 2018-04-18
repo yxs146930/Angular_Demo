@@ -1,14 +1,23 @@
-<!--<div class="row">
-  <div class="col-xs-12">
-    <button class="button button-neutral" (click)="onNewRecipe()">New Brand</button>
+<div>
+  <label>Please input your brand name:</label>
+  <input type="text" [(ngModel)]="brandName"/>
+  <label>please input the price:</label>
+  <input type="text" [(ngModel)]="price"/>
+
+
+
+  <div class="row col-xs-12">
+    <button class="button button-neutral" (click)="saveNewBrand()">New Brand</button>
   </div>
-</div>
-<hr>
-<div class="row">
-  <div class="col-xs-12">
-    <app-location-list
-      *ngFor="let locationEl of selectedLocation; let i = index"
-      [location]="locationEl"
-      [index]="i"></app-location-list>
+
+  <div class="row col-xs-12">
+      <button class="button button-neutral" (click)="getAllBrands()">Print all bands at console</button>
   </div>
-</div>-->
+  <p>{{ brands }}</p>
+  <hr>
+
+  <div class="row col-xs-12">
+      <app-location-item></app-location-item>
+  </div>
+
+</div> 

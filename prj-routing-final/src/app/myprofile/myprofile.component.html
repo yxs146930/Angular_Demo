@@ -1,3 +1,11 @@
-<p>
-    this is zhoushengjiadai
-</p>
+<div>
+    <p>Please input new personal profile into database</p>
+
+    <input type="text" [(ngModel)]="name"/>
+    <p>{{ name }}</p>
+
+    <input type="text" [(ngModel)]="ssn"/>
+    <p>{{ ssn }}</p>
+
+    <input type="button" value="Save" (click)="save()"> 
+</div>

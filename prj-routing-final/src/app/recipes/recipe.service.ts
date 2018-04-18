@@ -40,6 +40,7 @@ export class RecipeService {
     return this.recipes.slice();
   }
 
+  
   getRecipe(index: number) {
     if (index > this.recipes.length - 1) {
       console.log("not enough brand to provide");

@@ -1,6 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-
-import { Recipe } from '../recipe.model';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-location-item',
@@ -8,9 +6,10 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./location-item.component.css']
 })
 export class LocationItemComponent implements OnInit {
-  @Input() location: Recipe;
-  @Input() index: number;
+
+  constructor() { }
 
   ngOnInit() {
   }
+
 }

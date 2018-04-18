@@ -20,8 +20,8 @@ import { MyprofileComponent } from './myprofile/myprofile.component';
 import { StoreListComponent } from './store-list/store-list.component';
 import { StoreItemComponent } from './store-list/store-item/store-item.component';
 import { LocationListComponent } from './location-list/location-list.component';
-import { LocationItemComponent } from './location-list/location-item/location-item.component';
 import { BannerComponent } from './banner/banner.component';
+import { LocationItemComponent } from './location-list/location-item/location-item.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +40,8 @@ import { BannerComponent } from './banner/banner.component';
     StoreListComponent,
     StoreItemComponent,
     LocationListComponent,
-    BannerComponent
+    BannerComponent,
+    LocationItemComponent,
   ],
   imports: [
     BrowserModule,
