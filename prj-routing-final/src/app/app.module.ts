@@ -17,6 +17,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 import { MyprofileComponent } from './myprofile/myprofile.component';
+import { StoreListComponent } from './store-list/store-list.component';
+import { StoreItemComponent } from './store-list/store-item/store-item.component';
+import { LocationListComponent } from './location-list/location-list.component';
+import { LocationItemComponent } from './location-list/location-item/location-item.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +36,11 @@ import { MyprofileComponent } from './myprofile/myprofile.component';
     DropdownDirective,
     RecipeStartComponent,
     RecipeEditComponent,
-    MyprofileComponent
+    MyprofileComponent,
+    StoreListComponent,
+    StoreItemComponent,
+    LocationListComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
